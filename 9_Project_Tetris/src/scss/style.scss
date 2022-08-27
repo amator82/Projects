@@ -1,0 +1,25 @@
+@import './base/null.scss';
+//! <Подключение шрифтов>
+// &display=swap
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+//! </Подключение шрифтов>
+
+//! <Переменные>
+@import './base/variables.scss';
+//! </Переменные>
+
+//! <Обнуление, сетка, параметры>
+body {
+    font-family: var(--ff-secondary);
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+//! </Обнуление, сетка, параметры>
+
+//! <Подключение блоков>
+@import './blocks/header.scss';
+@import './blocks/main.scss';
+@import './blocks/footer.scss';
+//! </Подключение блоков>

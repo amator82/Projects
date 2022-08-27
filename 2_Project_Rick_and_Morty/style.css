@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    margin: 70px 35px;
+    height: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.box{
+    background-position: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin: 10px;
+    height: 80vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s ease-out;
+}
+
+.box.active{
+    flex: 7
+}
+
+.box:first-child{
+    background-position: 49%;
+}
+
+.box:nth-child(2){
+    background-position: 0%;
+}
+
+.box:nth-child(3){
+    background-position: 50%;
+}
+.box:nth-child(4){
+    background-position: 85%;
+}
+
+.box:nth-child(5){
+    background-position: 90%;
+}
