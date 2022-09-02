@@ -1,8 +1,13 @@
 @import './base/null.scss';
 //! <Подключение шрифтов>
 // &display=swap
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+// @import url('');
+// @import './base/fonts.scss';
 //! </Подключение шрифтов>
+
+//! <Иконочные шрифты>
+// @import './fonts/icons.scss';
+//! </Иконочные шрифты>
 
 //! <Переменные>
 @import './base/variables.scss';
@@ -10,15 +15,41 @@
 
 //! <Обнуление, сетка, параметры>
 body {
-    font-family: var(--ff-secondary);
-    background: var(--clr-grey-10);
-    color: var(--clr-grey-1);
-    line-height: 1.5;
-    font-size: 0.875rem;
+    color: #000;
+    font-size: 14px;
+    font-family: $fontFamily;
+    &._lock{
+        overflow: hidden;
+    }
 }
 //! </Обнуление, сетка, параметры>
 
+//! <Основная сетка>
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+    padding: 0 10px;
+    @media (max-width: $md1) {
+    }
+    @media (max-width: $md2) {
+    }
+    @media (max-width: $md3) {
+    }
+}
+.page{
+    flex: 1 1 auto;
+}
+//! </Основная сетка>
+
 //! <Подключение блоков>
+// @import './base/ui.scss';
 @import './blocks/header.scss';
 @import './blocks/main.scss';
 @import './blocks/footer.scss';
